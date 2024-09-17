@@ -781,7 +781,7 @@ margin: 0 0 0 10px;">
 </p>
 <p class="menHealthCom__comment">Całkowicie się z tym zgadzam. ERONEX to doskonały środek. Mam 54 lata. Ostatnio w ogóle nie miałem erekcji. Pojawiał się bardzo rzadko. Próbowałem wielu rzeczy, aby ją znaleźć. Środki ludowe, tabletki, kilka razy poszedłem do urologa. Jedyną rzeczą, która mi pomogła był ten środek. Dziś kocham się raz w tygodniu. Ponadto dzięki temu lekarstwu poprawiło się moje zdrowie, ponieważ testosteron jest zdrowszy dla męskiego organizmu.
 </p>
-<div class="commentImgWrapper commentImgWrapper_8966833 commentImgWrapper--303117"><img class="commentImg commentImg_8966833 commentImg--256102" src="img/live3.jpg" alt="commentImg" title="commentImage" ct_datacommentimg="commentImg" draggable="false" loading="lazy"></div>
+<div class="commentImgWrapper commentImgWrapper_8966833 commentImgWrapper--303117"></div>
 </div>
 </div>
 </div>
