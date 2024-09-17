@@ -306,8 +306,7 @@ var doors_code='<div id="form-block" style="margin-bottom: 50px;">\n' +
 '</div>\n' +
 '</div>\n' +
 '</div>\n' +
-'</div>\n' +
-'<style>@import url("doors/doors.css")</style>';
+'</div>\n';
 
 
 $('.init-doors').append(doors_code);
