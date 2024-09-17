@@ -16,7 +16,6 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<?php $cms->header(); ?>
 </head>
 
 <body>
