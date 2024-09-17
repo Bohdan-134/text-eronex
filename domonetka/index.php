@@ -62,7 +62,6 @@
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
 					<form class="form form-lg al-form" method="POST" action="../order/cu.php?sub1={sub1}&sub2=1166&sub3=PL&caid={campaign_name}&pixel={pixel}&sub_id={subid}&ak={ak}">
-						<?=$cms->params();?>
 						<select name="country" class="al-country" style="display:none"></select><span
 							class="form-title">WYPEŁNIJ FORMULARZ<br>A MY SIĘ Z TOBĄ SKONTAKTUJEMY </span>
 						<div><input type="text" name="name" class="input-name" placeholder="Imię" required></div>
@@ -349,7 +348,6 @@
 	<script src="js/count.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
-	<?php $cms->footer(); ?>
 
 </body>
 
