@@ -1,7 +1,4 @@
-<?php
-$cms = require_once $_SERVER['DOCUMENT_ROOT'] . '/init.php';
-$cms->landing( 1, 2 );
-?>
+<?php setcookie("FBpixel", $_GET["fbpixel"]); ?>
 
 <!DOCTYPE html>
 <html lang="pl">
