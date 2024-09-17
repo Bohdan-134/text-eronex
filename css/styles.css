@@ -2750,3 +2750,15 @@ input[placeholder="Ваше имя"],input[placeholder="Ваш телефон"] 
 .order-form-information-text span {
   color: #ca2d2d !important;
 }
+
+.mensHealthNavLogo__logo {
+  margin: 0 0 5px 0;
+  width: 400px;
+}
+
+@media(max-width: 500px) {
+  .mensHealthNavLogo__logo {
+    margin: 0 0 2px 0;
+    width: 100%;
+  }  
+}

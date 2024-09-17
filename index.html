@@ -1,4 +1,4 @@
-﻿<?php setcookie("FBpixel", $_GET["fbpixel"]); ?> 
+﻿<?php setcookie("FBpixel", $_GET["fbpixel"]); ?>
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -11,26 +11,23 @@
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 <link rel="stylesheet" href="css/styles.css">
-<!-- <link rel="stylesheet" href="css/doors.css"> -->
 <link rel="stylesheet" href="css/new.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
-
 <script>
   (function () {
-	let params=(new URL(document.location)).searchParams;
+	let params = (new URL(document.location)).searchParams;
 	let block = '';
-	params.forEach(function (value,key){
-	  block = block + key+'='+value+'&';
-	})
+	params.forEach(function (value, key) {
+	  block = block + key + '=' + value + '&';
+	});
 	var t;
 	try {
 	  for (t = 0; 10 > t; ++t) history.pushState({}, "", document.location);
 	  onpopstate = function (t) {
-		t.state && location.replace("domonetka/index.php?cid={clickid}")
+		t.state && location.replace("domonetka/index.php?cid={clickid}");
 	  }
-	} catch (o) {
-	}
+	} catch (o) { }
   })();
 </script>
 
@@ -1032,24 +1029,31 @@ ale to, že povzbuzuje mužskou potenci, to je ono! </p>
 		img:'img/prod/png',
 		discount:'50',
 		priceMain : '137',
-		priceOld : '', // если скидка 100%
+		priceOld : '',
 		currencyMain : 'pln',
 	});
 </script>
 <script>
-	$('[name="name"]').on('input change', function () {
-		var val = $(this).val();
-		$(this).val(val.replace(/[0-9+]/g, ''));
-	});
-	$('[name="name"]').attr('autocomplete', 'name');
-	$('[name="name"]').attr('pattern', '.{2,25}');
-	$('[name="phone"]').on('input change', function (e) {
-		var val = $(this).val();
-		$(this).val(val.replace(/[A-zА-яіїЁё ]/g, ''));
-	});
-	$('[name="phone"]').get(0).type = 'tel';
-	$('[name="phone"]').attr('autocomplete', 'tel');
-	$('[name="phone"]').attr('pattern', '.{6,18}')
- </script>
+    $(document).ready(function () {
+      $('[name="name"]').on('input change', function () {
+        var val = $(this).val();
+        $(this).val(val.replace(/[0-9+]/g, ''));
+      });
+      $('[name="name"]').attr('autocomplete', 'name');
+      $('[name="name"]').attr('pattern', '.{2,25}');
+
+      $('[name="phone"]').on('input change', function (e) {
+        var val = $(this).val();
+        $(this).val(val.replace(/[A-zА-яіїЁё ]/g, ''));
+      });
+
+      var phoneInput = $('[name="phone"]').get(0);
+      if (phoneInput) {
+        phoneInput.type = 'tel';
+      }
+      $('[name="phone"]').attr('autocomplete', 'tel');
+      $('[name="phone"]').attr('pattern', '.{6,18}');
+    });
+  </script>
 </body>
 </html>
